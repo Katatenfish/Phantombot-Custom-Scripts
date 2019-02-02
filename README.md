@@ -4,7 +4,11 @@
 These are custom modules made by Dakoda.
 
 # Scripts
-[Get est2Command](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/est2Command "est2Command")
+- # Commands
+    - [Get est2Command](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/est2Command "est2Command")
+    - [Get fcCommand](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/fcCommand "fcCommand")
+    - [Get flirtCommand](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/flirtCommand "flirtCommand")
+    - [Get gtCommand](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/gtCommand "gtCommand")
 
 # Disclaimer
 - These are user made modules. PhantomBot developers **will not** provide support for these modules.
