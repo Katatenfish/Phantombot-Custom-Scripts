@@ -5,7 +5,7 @@ These are custom modules made by Dakoda.
 
 # Setup
 1. [x] [Download est2Command](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/custom/commands/est2Command/est2Command.js "est2Command")
-2. [x] 
+2. [x] [Download ets2-telemetry-server](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/external/ets2-telemetry-server.zip "ets2-telemetry-server")
 
 # Disclaimer
 - These are user made modules. PhantomBot developers **will not** provide support for these modules.
