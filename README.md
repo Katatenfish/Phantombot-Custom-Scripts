@@ -19,6 +19,17 @@ These are custom modules made by Dakoda.
     - [Get lottoSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/lottoSystem "lottoSystem")
     - [Get tamagotchiSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/tamagotchiSystem "tamagotchiSystem")
 
+- # Systems
+    - [Get alertSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/alertSystem "alertSystem")
+    - [Get bankSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/bankSystem "bankSystem")
+    - [Get bitsSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/bitsSystem "bitsSystem")
+    - [Get dailySystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/dailySystem "dailySystem")
+    - [Get healthSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/healthSystem "healthSystem")
+    - [Get payActiveSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/payActiveSystem "payActiveSystem")
+    - [Get rewardSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/rewardSystem "rewardSystem")
+    - [Get speakSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/speakSystem "speakSystem")
+    - [Get spotifySystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/spotifySystem "spotifySystem")
+
 # Disclaimer
 - These are user made modules. PhantomBot developers **will not** provide support for these modules.
 - We are not responsible if any module should corrupt, break or does anything unexpected to your database.
