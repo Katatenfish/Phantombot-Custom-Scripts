@@ -3,14 +3,14 @@
 # Dakoda's Custom Modules for PhantomBot
 These are custom modules made by Dakoda.
 
-# Scripts
-- # Commands
+## Scripts
+- ### Commands
     - [Get est2Command](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/est2Command "est2Command")
     - [Get fcCommand](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/fcCommand "fcCommand")
     - [Get flirtCommand](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/flirtCommand "flirtCommand")
     - [Get gtCommand](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/commands/gtCommand "gtCommand")
 
-- # Games
+- ### Games
     - [Get challengeSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/challengeSystem "challengeSystem")
     - [Get defuseSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/defuseSystem "defuseSystem")
     - [Get hackSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/hackSystem "hackSystem")
@@ -19,7 +19,7 @@ These are custom modules made by Dakoda.
     - [Get lottoSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/lottoSystem "lottoSystem")
     - [Get tamagotchiSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/tamagotchiSystem "tamagotchiSystem")
 
-- # Systems
+- ### Systems
     - [Get alertSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/alertSystem "alertSystem")
     - [Get bankSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/bankSystem "bankSystem")
     - [Get bitsSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/bitsSystem "bitsSystem")
@@ -30,7 +30,7 @@ These are custom modules made by Dakoda.
     - [Get speakSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/speakSystem "speakSystem")
     - [Get spotifySystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/spotifySystem "spotifySystem")
 
-# Disclaimer
+## Disclaimer
 - These are user made modules. PhantomBot developers **will not** provide support for these modules.
 - We are not responsible if any module should corrupt, break or does anything unexpected to your database.
 - We are not responsible if any module should provide a negative user experience in your chat.
