@@ -1,7 +1,7 @@
 # <img alt="PhantomBot" src="https://phantombot.tv/img/new-logo-dark-v2.png" width="600px"/>
 
-# Dakoda's est2 Modules for PhantomBot
-This is a est2 modules made by Dakoda.
+# Dakoda's ETS2 Modules for PhantomBot
+This is a ETS2 modules made by Dakoda.
 
 # Download
 - [x] [Download est2Command](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/custom/commands/est2Command/est2Command.js "est2Command")
