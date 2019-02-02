@@ -21,8 +21,8 @@ This is a ETS2 modules made by Dakoda.
 - !ets2 set currency [Currency] = this will set your currency (use $ £ or € depending on your currency default is €)
 
 ## Notes:
-- Place est2Command.js into *scripts/custom/commands* if folders not there then make them
-- Place commands-est2Command into *scripts/lang/custom/commands* if folders not there then make them
+- Place est2Command.js into *./scripts/custom/commands* if folders not there then make them
+- Place commands-est2Command into *./scripts/lang/custom/commands* if folders not there then make them
 
 ## Disclaimer
 - These are user made modules. PhantomBot developers **will not** provide support for these modules.
