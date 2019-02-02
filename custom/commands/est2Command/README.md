@@ -6,7 +6,6 @@ This is a est2 modules made by Dakoda.
 # Download
 - [x] [Download est2Command](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/custom/commands/est2Command/est2Command.js "est2Command")
 - [x] [Download commands-est2Command](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/lang/english/custom/commands/commands-ets2Command.js "commands-est2Command")
-
 - [x] [Download ets2-telemetry-server](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/external/ets2-telemetry-server.zip "ets2-telemetry-server")
 
 # Current Script Version:
