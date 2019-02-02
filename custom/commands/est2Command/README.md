@@ -1,11 +1,14 @@
 # <img alt="PhantomBot" src="https://phantombot.tv/img/new-logo-dark-v2.png" width="600px"/>
 
-# Dakoda's Custom Modules for PhantomBot
-These are custom modules made by Dakoda.
+# Dakoda's est2 Modules for PhantomBot
+This is a est2 modules made by Dakoda.
 
-# Setup
-1. [x] [Download est2Command](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/custom/commands/est2Command/est2Command.js "est2Command")
-2. [x] [Download ets2-telemetry-server](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/external/ets2-telemetry-server.zip "ets2-telemetry-server")
+# Download
+- [x] [Download est2Command](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/custom/commands/est2Command/est2Command.js "est2Command")
+- [x] [Download ets2-telemetry-server](https://raw.githubusercontent.com/Codes2Much/Phantombot-Custom-Scripts/master/external/ets2-telemetry-server.zip "ets2-telemetry-server")
+
+# Current Script Version:
+- 1.0.1
 
 # Disclaimer
 - These are user made modules. PhantomBot developers **will not** provide support for these modules.
