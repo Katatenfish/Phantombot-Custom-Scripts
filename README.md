@@ -31,6 +31,9 @@ These are custom modules made by Codes2Much.
     - [Get speakSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/speakSystem "speakSystem")
     - [Get spotifySystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/systems/spotifySystem "spotifySystem")
 
+- ### Discord
+    - [Get rulesCommand](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/discord/custom/commands/rulesCommand "rulesCommand")
+
 ## Disclaimer
 - These are user made modules. PhantomBot developers **will not** provide support for these modules.
 - We are not responsible if any module should corrupt, break or does anything unexpected to your database.
