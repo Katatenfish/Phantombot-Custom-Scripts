@@ -17,6 +17,7 @@ These are custom modules made by Dakoda.
     - [Get heistSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/heistSystem "heistSystem")
     - [Get jengaSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/jengaSystem "jengaSystem")
     - [Get lottoSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/lottoSystem "lottoSystem")
+    - [Get stealSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/stealSystem "stealSystem")
     - [Get tamagotchiSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/custom/games/tamagotchiSystem "tamagotchiSystem")
 
 - ### Systems
