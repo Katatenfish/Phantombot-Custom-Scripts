@@ -1,7 +1,7 @@
 # <img alt="PhantomBot" src="https://phantombot.tv/img/new-logo-dark-v2.png" width="600px"/>
 
-# Dakoda's Custom Modules for PhantomBot
-These are custom modules made by Dakoda.
+# Codes2Much's Custom Modules for PhantomBot
+These are custom modules made by Codes2Much.
 
 ## Scripts
 - ### Commands
