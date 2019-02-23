@@ -33,6 +33,7 @@ These are custom modules made by Codes2Much.
 
 - ### Discord
     - [Get rulesCommand](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/discord/custom/commands/rulesCommand "rulesCommand")
+    - [Get uploadBackupSystem](https://github.com/Codes2Much/Phantombot-Custom-Scripts/tree/master/discord/custom/systems/uploadBackupSystem "uploadBackupSystem")
 
 ## Disclaimer
 - These are user made modules. PhantomBot developers **will not** provide support for these modules.
