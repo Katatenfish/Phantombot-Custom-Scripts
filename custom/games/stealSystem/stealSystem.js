@@ -150,20 +150,20 @@
                         } else {
                             var whoSteals = getRandomInt(1, 100);
                             if (whoSteals > 75) {
-                                $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), $.botName));
+                                $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), action));
                                 $.inidb.decr('points', sender, randInt);
                                 $.inidb.incr('points', action, randInt);
                                 setTimeout(function() {
                                     randomNumber = $.randRange(1, StealTargetCounter - 1);
-                                    $.say($.whisperPrefix(sender) + $.lang.get('steal.target.steals.'+randomNumber, $.getPointsString(randInt), $.botName));
+                                    $.say($.whisperPrefix(sender) + $.lang.get('steal.target.steals.'+randomNumber, $.getPointsString(randInt), action));
                                 }, 5e3);                               
                             } else {
-                                $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), $.botName));
+                                $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), action));
                                 $.inidb.decr('points', action, randInt);
                                 $.inidb.incr('points', sender, randInt);
                                 setTimeout(function() {
                                     randomNumber = $.randRange(1, StealSenderCounter - 1);
-                                    $.say($.whisperPrefix(sender) + $.lang.get('steal.sender.steals.'+randomNumber, $.getPointsString(randInt), $.botName));
+                                    $.say($.whisperPrefix(sender) + $.lang.get('steal.sender.steals.'+randomNumber, $.getPointsString(randInt), action));
                                 }, 5e3);                                
                             }
                         }
