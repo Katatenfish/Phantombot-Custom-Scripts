@@ -485,7 +485,7 @@
                 return;
             }
 
-            $.inidb.decr('points', sender, amount * pricing.buyFood);
+            $.inidb.decr('points', sender.toLowerCase(), amount * pricing.buyFood);
             targetTG.incrFoodLevel(amount).save();
         }
 
@@ -500,10 +500,6 @@
             }
             tg.kill();
         }
-
-        if (command.equalsIgnoreCase('reloadtamagotchisettings')) {
-            reloadTamagotchiSettings();
-        }
     });
 
     /**
@@ -516,8 +512,6 @@
             $.registerChatCommand('./custom/games/tamagotchi.js', 'tgbuy', 6);
             $.registerChatCommand('./custom/games/tamagotchi.js', 'tgfeed', 6);
             $.registerChatCommand('./custom/games/tamagotchi.js', 'tgkill', 6);
-
-            $.registerChatCommand('./custom/games/tamagotchi.js', 'reloadtamagotchisettings', 30);
 
             $.consoleDebug($.lang.get('tamagotchi.console.loaded', $.inidb.GetKeyList('tamagotchi', '').length));
         }
@@ -536,4 +530,6 @@
         sayTarget404: sayTarget404,
         foodLevelTTLHrsToSec: foodLevelTTLHrsToSec,
     };
+
+    $.reloadTamagotchiSettings = reloadTamagotchiSettings;
 })();

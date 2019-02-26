@@ -9,7 +9,7 @@
         require = null,
         amountSucceed = $.getSetIniDbNumber('jenga', 'succeed', 20),
         amountFail = $.getSetIniDbNumber('jenga', 'fail', 5),
-        chance = $.getSetIniDbNumber('jenga', 'chance', 50),
+        chance = $.getSetIniDbNumber('jenga', 'chance', 75),
         cooldown = $.getSetIniDbNumber('jenga', 'cooldown', 120),
         lastRollSucceed = $.getSetIniDbBoolean('jenga', 'lastRollSucceed', false),
         lastRollFail = $.getSetIniDbBoolean('jenga', 'lastRollFail', false),
@@ -18,6 +18,9 @@
         lastRollerFail = $.getSetIniDbString('jenga', 'lastRollerFail', null);
 
     function reloadJenga() {
+        amountSucceed = $.getIniDbNumber('jenga', 'succeed'),
+        amountFail = $.getIniDbNumber('jenga', 'fail'),
+        chance = $.getIniDbNumber('jenga', 'chance'),
         lastRollSucceed = $.getIniDbBoolean('jenga', 'lastRollSucceed'),
         lastRollFail = $.getIniDbBoolean('jenga', 'lastRollFail'),
         lastRoller = $.getIniDbString('jenga', 'lastRoller'),
@@ -39,7 +42,7 @@
             points_sender = $.inidb.get('points', sender);
 
         /**
-         * @commandpath jenga ?last - knock down the a jenga, or retrieve the last result
+         * @commandpath jenga - knock down the a jenga, or retrieve the last result
          */
         if (command.equalsIgnoreCase('jenga')) {
             if (!action) {
@@ -56,8 +59,8 @@
                             lastRoller = $.setIniDbString('jenga', 'lastRoller', sender),
                             lastRollFail = $.setIniDbBoolean('jenga', 'lastRollFail', true);
 
-                            $.inidb.decr('points', sender, amountFail);
-                            $.inidb.incr('points', lastRollerSucceed, amountFail);
+                            $.inidb.decr('points', sender.toLowerCase(), amountFail);
+                            $.inidb.incr('points', lastRollerSucceed.toLowerCase(), amountFail);
 
                             $.coolDown.set('jenga', false, cooldown, false);
                             setTimeout(function() {
@@ -79,15 +82,12 @@
 
                         $.say($.lang.get('jenga.nopoints', ranked_sender, currency, require));
                     }
-                    reloadJenga();
-                    return;
                 }
                 reloadJenga();
                 return;
             }
 
             if (action.equalsIgnoreCase('fail')) {
-                reloadJenga();
                 if (!lastRollFail) {
                     $.say($.lang.get('jenga.no_last.fail', ranked_sender));
                 } else {
@@ -97,11 +97,11 @@
                         $.say($.lang.get('jenga.last.fail', ranked_sender, lastRollerFail));
                     }
                 }
+                reloadJenga();
                 return;
             }
 
             if (action.equalsIgnoreCase('succeed')) {
-                reloadJenga();
                 if (!lastRollSucceed) {
                     $.say($.lang.get('jenga.no_last.succeed', ranked_sender));
                 } else {
@@ -111,31 +111,31 @@
                         $.say($.lang.get('jenga.last.succeed', ranked_sender, lastRollerSucceed));
                     }
                 }
+                reloadJenga();
                 return;
             }
         }
 
         if (command.equalsIgnoreCase('jengawin')) {
             if (!isNaN(action)) {
-                amountSucceed = $.getSetIniDbNumber('jenga', 'succeed', action);
                 $.setIniDbNumber('jenga', 'succeed', action);
-                $.say($.lang.get('jenga.set.succeed', ranked_sender, amountSucceed));
+                $.say($.lang.get('jenga.set.succeed', ranked_sender, action));
+                reloadJenga();
             }
         }
 
         if (command.equalsIgnoreCase('jengalose')) {
             if (!isNaN(action)) {
                 $.setIniDbNumber('jenga', 'fail', action);
-                amountFail = $.getSetIniDbNumber('jenga', 'fail', action);
-                $.say($.lang.get('jenga.set.fail', ranked_sender, amountFail));
+                $.say($.lang.get('jenga.set.fail', ranked_sender, action));
+                reloadJenga();
             }
         }
 
         if (command.equalsIgnoreCase('jengachance')) {
             if (!isNaN(action)) {
                 $.setIniDbNumber('jenga', 'chance', action);
-                chance = $.getSetIniDbNumber('jenga', 'chance', action);
-                $.say($.lang.get('jenga.set.chance', ranked_sender, chance));
+                $.say($.lang.get('jenga.set.chance', ranked_sender, action));
             }
         }
 
@@ -143,7 +143,8 @@
             if (!isNaN(action)) {
                 $.setIniDbNumber('jenga', 'cooldown', action);
                 cooldown = $.getSetIniDbNumber('jenga', 'cooldown', action);
-                $.say($.lang.get('jenga.set.cooldown', ranked_sender, cooldown));
+                $.say($.lang.get('jenga.set.cooldown', ranked_sender, action));
+                reloadJenga();
             }
         }
     });
@@ -163,4 +164,6 @@
             $.registerChatCommand('./custom/games/jengaSystem.js', 'jengacd', 2);
         }
     });
+
+    $.reloadJenga = reloadJenga;
 })();

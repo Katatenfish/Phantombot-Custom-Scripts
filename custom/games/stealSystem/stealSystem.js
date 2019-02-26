@@ -99,16 +99,16 @@
                         var whoSteals = getRandomInt(1, 100);
                         if (whoSteals > 75) {
                             $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), $.botName));
-                            $.inidb.decr('points', sender, randInt);
-                            $.inidb.incr('points', $.botName, randInt);
+                            $.inidb.decr('points', sender.toLowerCase(), randInt);
+                            $.inidb.incr('points', $.botName.toLowerCase(), randInt);
                             setTimeout(function() {
                                 randomNumber = $.randRange(1, StealTargetCounter - 1);
                                 $.say($.whisperPrefix(sender) + $.lang.get('steal.target.steals.'+randomNumber, $.getPointsString(randInt), $.botName));
                             }, 5e3);
                         } else {
                             $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), $.botName));
-                            $.inidb.decr('points', $.botName, randInt);
-                            $.inidb.incr('points', sender, randInt);
+                            $.inidb.decr('points', $.botName.toLowerCase(), randInt);
+                            $.inidb.incr('points', sender.toLowerCase(), randInt);
                             setTimeout(function() {
                                 randomNumber = $.randRange(1, StealSenderCounter - 1);
                                 $.say($.whisperPrefix(sender) + $.lang.get('steal.sender.steals.'+randomNumber, $.getPointsString(randInt), $.botName));
@@ -151,15 +151,15 @@
                             $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), $.username.resolve(action)));
                             var whoSteals = getRandomInt(1, 100);
                             if (whoSteals > 50) {
-                                $.inidb.decr('points', sender, randInt);
-                                $.inidb.incr('points', action, randInt);
+                                $.inidb.decr('points', sender.toLowerCase(), randInt);
+                                $.inidb.incr('points', action.toLowerCase(), randInt);
                                 setTimeout(function() {
                                     randomNumber = $.randRange(1, StealTargetCounter - 1);
                                     $.say($.whisperPrefix(sender) + $.lang.get('steal.target.steals.'+randomNumber, $.getPointsString(randInt), $.username.resolve(action)));
                                 }, 5e3);                               
                             } else {
-                                $.inidb.decr('points', action, randInt);
-                                $.inidb.incr('points', sender, randInt);
+                                $.inidb.decr('points', action.toLowerCase(), randInt);
+                                $.inidb.incr('points', sender.toLowerCase(), randInt);
                                 setTimeout(function() {
                                     randomNumber = $.randRange(1, StealSenderCounter - 1);
                                     $.say($.whisperPrefix(sender) + $.lang.get('steal.sender.steals.'+randomNumber, $.getPointsString(randInt), $.username.resolve(action)));

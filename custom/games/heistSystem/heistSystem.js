@@ -295,7 +295,7 @@
             bet: parseInt(bet),
         });
 
-        $.inidb.decr('points', username, bet);
+        $.inidb.decr('points', username.toLowerCase(), bet);
         inviteTamagotchi(username, bet);
         return true;
     }
@@ -370,7 +370,7 @@
             pay = (currentHeist.survivors[i].bet * (gainPercent / 100));
             $.inidb.incr('heistPayouts', currentHeist.survivors[i].username, pay);
             $.inidb.incr('heistPayoutsTEMP', currentHeist.survivors[i].username, pay);
-            $.inidb.incr('points', currentHeist.survivors[i].username, currentHeist.survivors[i].bet + pay);
+            $.inidb.incr('points', currentHeist.survivors[i].username.toLowerCase(), currentHeist.survivors[i].bet + pay);
         }
 
         for (i in currentHeist.survivors) {

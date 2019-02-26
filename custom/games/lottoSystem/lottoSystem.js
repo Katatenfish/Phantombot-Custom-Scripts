@@ -8,12 +8,18 @@
         currency,
         cost;
 
+    /**
+     * @function getRandomInt
+     */
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
     }
 
+    /**
+     * @function contains
+     */
     function contains(a, obj) {
         for (var i = 0; i < a.length; i++) {
             if (a[i] == obj) {
@@ -51,7 +57,7 @@
                     $.say($.lang.get('lotto.try', ranked_sender, intAction1, loto.join(', '), currency));
                     setTimeout(function() {
                         $.say($.lang.get('lotto.pass', ranked_sender, currency));
-                        $.inidb.incr('points', sender, currency);
+                        $.inidb.incr('points', sender.toLowerCase(), currency);
                     }, 12e2);
                 } else {
                     currency = $.getPointsString(multiplier * cost);
