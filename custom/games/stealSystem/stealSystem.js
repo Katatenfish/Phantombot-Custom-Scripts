@@ -148,27 +148,27 @@
                         if (randInt > $.getUserPoints(sender)) {
                             $.say($.whisperPrefix(sender) + $.lang.get('steal.user.nopoints', $.username.resolve(sender), $.getPointsString()));
                         } else {
-                            $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), action));
+                            $.say($.whisperPrefix(sender) + $.lang.get('steal.tryme', $.getPointsString(randInt), $.username.resolve(action)));
                             var whoSteals = getRandomInt(1, 100);
-                            if (whoSteals > 75) {
+                            if (whoSteals > 50) {
                                 $.inidb.decr('points', sender, randInt);
                                 $.inidb.incr('points', action, randInt);
                                 setTimeout(function() {
                                     randomNumber = $.randRange(1, StealTargetCounter - 1);
-                                    $.say($.whisperPrefix(sender) + $.lang.get('steal.target.steals.'+randomNumber, $.getPointsString(randInt), action));
+                                    $.say($.whisperPrefix(sender) + $.lang.get('steal.target.steals.'+randomNumber, $.getPointsString(randInt), $.username.resolve(action)));
                                 }, 5e3);                               
                             } else {
                                 $.inidb.decr('points', action, randInt);
                                 $.inidb.incr('points', sender, randInt);
                                 setTimeout(function() {
                                     randomNumber = $.randRange(1, StealSenderCounter - 1);
-                                    $.say($.whisperPrefix(sender) + $.lang.get('steal.sender.steals.'+randomNumber, $.getPointsString(randInt), sender));
+                                    $.say($.whisperPrefix(sender) + $.lang.get('steal.sender.steals.'+randomNumber, $.getPointsString(randInt), $.username.resolve(action)));
                                 }, 5e3);                                
                             }
                         }
                     }
                 } else {
-                    $.say($.whisperPrefix(sender) + $.lang.get('steal.nouser.usage', action));
+                    $.say($.whisperPrefix(sender) + $.lang.get('steal.nouser.usage', $.username.resolve(action)));
                 }
             }
 		}
